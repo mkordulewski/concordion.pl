@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^((.*)\.)?(concordion\.pl)$ [NC]
+RewriteRule ^ http://concordion.org/ [R=302,L,NE]
